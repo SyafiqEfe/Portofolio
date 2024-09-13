@@ -21,4 +21,6 @@ function changeBg(bg, title) {
 
 document.addEventListener("DOMContentLoaded", () => {
   changeBg("bg-the-covenant.jpeg", "the-covenant");
+
+  document.querySelector(".trailer").style.display = "none";
 });
