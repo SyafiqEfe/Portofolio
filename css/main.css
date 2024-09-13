@@ -98,11 +98,10 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: url("img/movies/bg-the-covenant.jpeg") no-repeat;
+  background: url("./img/movies/bg-the-covenant.jpeg") no-repeat;
   background-size: cover;
   background-position: center;
   overflow: hidden;
-  transition: 0.5s;
 }
 
 .banner::before {

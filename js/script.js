@@ -1,14 +1,13 @@
 function toggleVideo() {
-  const trailer = document.querySelector("trailer");
-  const vidoe = document.querySelector("Video");
-  vidoe.pause();
-  trailer.classList.toggle("active");
+  const trailer = document.querySelector(".trailer");
+  const video = trailer.querySelector("video");
 }
 
 function changeBg(bg, title) {
   const banner = document.querySelector(".banner");
-  const contents = document.querySelector(".content");
-  banner.style.backgroundImage = `url("img/movies/${bg}")`;
+  const contents = document.querySelectorAll(".content");
+
+  banner.style.backgroundImage = `url('./img/movies/${bg}')`;
   banner.style.backgroundSize = "cover";
   banner.style.backgroundPosition = "center";
 
@@ -19,3 +18,7 @@ function changeBg(bg, title) {
     }
   });
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  changeBg("bg-the-covenant.jpeg", "the-covenant");
+});
