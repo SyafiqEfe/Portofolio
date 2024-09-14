@@ -20,7 +20,7 @@ function changeBg(bg, title) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  changeBg("bg-the-covenant.jpeg", "the-covenant");
+  changeBg("bg-My-bio.jpeg", "my-bio");
 
   document.querySelector(".trailer").style.display = "none";
 });
